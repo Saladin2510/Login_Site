@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in site saya</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="section">
+        <div class="wrapper">
+            <div class="logreg-box">
+
+                <!-- login form -->
+                <div class="form-box login">
+                    <div class="logreg-title">
+                        <h2><Main>Masuk</Main></h2>
+                        <p>Silahkan masuk untuk memasuki website</p>
+                    </div>
+
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-envelope'></i></span>
+                            <input type="email" required id="surelMasuk">
+                            <label for="">Email</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                            <input type="password" required id="kataKunciMasuk">
+                            <label for="">Password</label>
+                        </div>
+
+                        <div class="remember-forgot">
+                            <label for=""><input type="checkbox">Ingatkan aku</label>
+                            <a href="#">Lupa password</a>
+                        </div>
+
+                        <button class="btn" onclick="masuk()">Masuk</button>
+
+                        <div class="logreg-link">
+                            <p>Belum punya akun? <a href="#" class="register-link">Daftar</a></p>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- hasil -->
+                <div class="form-box hasil">
+                    <div class="logreg-title">
+                        <h2><Main>Data</Main></h2>
+                        <p>Berikut data yang telah anda input</p>
+                    </div>
+
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-user'></i></span>
+                            <label for="" id="namaHasil">Nama Lengkap :</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-envelope'></i></span>
+                            <label for="" id="surelHasil">Email :</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                            <label for="" id="kataKunciHasil">Password :</label>
+                        </div>
+
+                        <button class="btn" onclick="kembali()">Kembali</button>
+                    </form>
+                </div>
+
+
+                <!-- register form -->
+                <div class="form-box register">
+                    <div class="logreg-title">
+                        <h2>Daftar</h2>
+                        <p>Silahkan isi data</p>
+                    </div>
+
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-user'></i></span>
+                            <input type="text" required id="nama">
+                            <label for="">Nama Lengkap</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-envelope'></i></span>
+                            <input type="email" required id="surel">
+                            <label for="">Email</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                            <input type="password" required id="kataKunci">
+                            <label for="">Password</label>
+                        </div>
+
+                        <div class="remember-forgot">
+                            <label for=""><input type="checkbox">Saya setuju dengan syarat & ketentuan</label>
+                            
+                        </div>
+
+                        <button class="btn" onclick="daftar()">Daftar</button>
+
+                        <div class="logreg-link">
+                            <p>Sudah punya akun? <a href="#" class="login-link">Masuk</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
